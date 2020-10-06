@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route path="/search">
+          <Route path="/search" exact>
             <Search />
           </Route>
           <Route path="/">
