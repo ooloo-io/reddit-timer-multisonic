@@ -42,9 +42,9 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
   body {
-    font-family: ${(props) => props.theme.fonts.montserrat};
-    font-size: ${(props) => props.theme.fonts.size.body};
-    line-height: ${(props) => props.theme.fonts.lineHeight.body};;
+    font-family: ${(props) => props.theme.fonts.body};
+    font-size: ${(props) => props.theme.fonts.size.default};
+    line-height: ${(props) => props.theme.fonts.lineHeight.default};;
     color: ${(props) => props.theme.colors.grayBase};
   }
 `;

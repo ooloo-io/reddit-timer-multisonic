@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle from './globalStyles';
 
 import Header from './components/Header';
@@ -9,13 +9,18 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import theme from './config/theme';
 
+const Wrapper = styled.div`
+  margin: auto;
+  max-width: 1440px;
+`;
+
 function App() {
   return (
-    <>
+    <Wrapper>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Header />
         <Router>
+          <Header />
           <Switch>
             <Route path="/search">
               <Search />
@@ -27,7 +32,7 @@ function App() {
         </Router>
         <Footer />
       </ThemeProvider>
-    </>
+    </Wrapper>
   );
 }
 
