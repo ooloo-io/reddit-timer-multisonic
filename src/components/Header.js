@@ -9,6 +9,7 @@ const HeaderWrapper = styled.header`
   padding: 32px 80px;
   align-items: center;
 `;
+
 const Navigation = styled.nav`
   margin-left: auto;
   text-align: right;
