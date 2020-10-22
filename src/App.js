@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle from './globalStyles';
 
@@ -19,7 +19,6 @@ function App() {
     <Wrapper>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Router>
           <Header />
           <Switch>
             <Route path="/search">
@@ -29,7 +28,6 @@ function App() {
               <Home />
             </Route>
           </Switch>
-        </Router>
         <Footer />
       </ThemeProvider>
     </Wrapper>
