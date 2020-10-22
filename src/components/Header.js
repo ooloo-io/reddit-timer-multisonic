@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from './logo.svg';
 
-const HeaderWrapper = styled.header`
+const Wrapper = styled.header`
   display: flex;
   padding: 32px 80px;
   align-items: center;
@@ -27,7 +27,7 @@ const StyledLogo = styled(Logo)`
 
 function Header() {
   return (
-    <HeaderWrapper>
+    <Wrapper>
       <Link to="/">
         <StyledLogo />
       </Link>
@@ -36,7 +36,7 @@ function Header() {
         <StyledLink to="/#how-it-works">How it works</StyledLink>
         <StyledLink to="/#about">About</StyledLink>
       </Navigation>
-    </HeaderWrapper>
+    </Wrapper>
   );
 }
 
