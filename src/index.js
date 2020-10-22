@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import App from './App';
+import App from './app/App';
 import 'normalize.css';
 
 // eslint-disable-next-line react/jsx-filename-extension
