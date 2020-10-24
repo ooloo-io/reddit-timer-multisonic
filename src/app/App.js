@@ -4,9 +4,9 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from '../style';
 
 import Header from '../common/header';
-import Search from '../pages/Search';
+import Footer from '../common/footer';
 import Home from '../pages/Home';
-import Footer from '../components/Footer';
+import Search from '../pages/Search';
 
 import Wrapper from './App.style';
 
