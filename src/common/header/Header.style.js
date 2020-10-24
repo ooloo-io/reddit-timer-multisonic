@@ -26,8 +26,11 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   height: 100px;
   margin: 0 auto;
-  padding: 0 80px;
+/*   padding: 0 80px; */
   display: flex;
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 20px;
   align-items: center;
   justify-content: space-between;
 `;
