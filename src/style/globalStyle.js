@@ -51,7 +51,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${(props) => props.theme.font.size.default};
     line-height: ${(props) => props.theme.font.lineHeight.default};;
     color: ${(props) => props.theme.color.grayBase};
+    letter-spacing: 0.07px;
   }
+  
   h1 {
     font-family: ${(props) => props.theme.font.header};
     color: black;
