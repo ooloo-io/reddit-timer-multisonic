@@ -29,3 +29,16 @@ test('navigates to home page when icon is clicked', () => {
 
   expect(screen.getByText(/home page/i)).toBeInTheDocument();
 });
+
+test.each`
+linkText                | pathName
+${'Terms & Privacy'}    | ${'/terms'}
+${'ooloo.io'}           | ${'https://ooloo.io/employers'}
+`('navigates to $pathName when $linkText link is clicked', ({ linkText, pathName }) => {
+  setup('/search/javascript');
+
+  const link = screen.getByRole('link', { name: linkText });
+  userEvent.click(link);
+  /* expect(history.location.pathname).toBe(pathName); */
+  expect(link).toHaveAttribute('href', pathName);
+});
