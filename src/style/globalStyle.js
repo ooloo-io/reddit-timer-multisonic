@@ -47,10 +47,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: ${(props) => props.theme.fonts.body};
-    font-size: ${(props) => props.theme.fonts.size.default};
-    line-height: ${(props) => props.theme.fonts.lineHeight.default};;
-    color: ${(props) => props.theme.colors.grayBase};
+    font-family: ${(props) => props.theme.font.body};
+    font-size: ${(props) => props.theme.font.size.default};
+    line-height: ${(props) => props.theme.font.lineHeight.default};;
+    color: ${(props) => props.theme.color.grayBase};
+  }
+  h1 {
+    font-family: ${(props) => props.theme.font.header};
+    color: black;
   }
 `;
 

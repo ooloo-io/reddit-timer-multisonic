@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  margin: auto;
-  max-width: 1440px;
+// eslint-disable-next-line import/prefer-default-export
+export const ContentContainer = styled.main`
+  min-height: ${(props) => `calc(100vh - ${props.theme.size.headerHeight} - ${props.theme.size.footerHeight})`};
 `;
 
-export default Wrapper;
+/* export const Wrapper = styled.main``;
+ */

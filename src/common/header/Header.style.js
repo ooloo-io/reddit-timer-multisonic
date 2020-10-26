@@ -4,7 +4,7 @@ import { ReactComponent as UnstyledLogo } from './logo.svg';
 
 export const HeaderWrapper = styled.header`
   width: 100%;
-  height: 100px;
+  height: ${(props) => props.theme.size.headerHeight};
   margin: 0 auto;
   display: flex;
   max-width: 1320px;
@@ -21,5 +21,5 @@ export const Logo = styled(UnstyledLogo)`
 export const StyledLink = styled(Link)`
   margin-left: 26px;
   text-decoration: none;
-  color: ${(props) => props.theme.colors.grayBase};
+  color: ${(props) => props.theme.color.grayBase};
 `;
