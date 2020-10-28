@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import { Section } from './InfoSection.style';
+import { InfoLink, Section } from './InfoSection.style';
 
 function InfoSection() {
   return (
@@ -18,13 +17,13 @@ function InfoSection() {
       <div>
         This app was created during a course on
         {' '}
-        <Link as="a" to="https://ooloo.io/">ooloo.io</Link>
+        <InfoLink as="a" href="https://ooloo.io/">ooloo.io</InfoLink>
         {' '}
         with the goal to implement a pixel-perfect real-world application with professional
         workflows and tools like Kanban, ClickUp, Zeplin, GitHub, pull requests and code
         reviews.
         {' '}
-        <Link as="a" to="https://ooloo.io/employers">Click here for more information.</Link>
+        <InfoLink as="a" href="https://ooloo.io/employers/">Click here for more information.</InfoLink>
       </div>
     </Section>
   );
