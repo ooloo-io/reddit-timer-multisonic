@@ -5,7 +5,7 @@ import { GlobalStyle, theme } from '../style';
 
 import Header from '../common/header';
 import Footer from '../common/footer';
-import Home from '../pages/Home';
+import { Home } from '../pages/home-page';
 import Search from '../pages/Search';
 import Terms from '../pages/Terms';
 

@@ -19,7 +19,7 @@ export const Logo = styled(UnstyledLogo)`
 `;
 
 export const StyledLink = styled(Link)`
-  margin-left: 26px;
+  margin-left: 25px;
   text-decoration: none;
   color: ${(props) => props.theme.color.grayBase};
 `;

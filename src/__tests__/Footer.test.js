@@ -18,7 +18,7 @@ test('navigates to home page when icon is clicked', () => {
   const logoLink = screen.getByRole('link', { name: /logo-small\.svg/i });
   userEvent.click(logoLink);
 
-  expect(screen.getByText(/home page/i)).toBeInTheDocument();
+  expect(screen.getByText(/No reactions to your reddit posts/i)).toBeInTheDocument();
 });
 
 test('navigates to "ooloo.io/employers" when "ooloo.io" link is clicked', () => {

@@ -51,12 +51,18 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${(props) => props.theme.font.size.default};
     line-height: ${(props) => props.theme.font.lineHeight.default};;
     color: ${(props) => props.theme.color.grayBase};
-    letter-spacing: 0.07px;
+    letter-spacing: ${(props) => props.theme.color.text};
   }
   
-  h1 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: ${(props) => props.theme.font.header};
-    color: black;
+    color: ${(props) => props.theme.color.dark};
+    font-weight: normal;
+    letter-spacing: ${(props) => props.theme.font.letterSpacing.header};
+  }
+
+  h1 {
+    font-size: ${(props) => props.theme.font.size.header};
   }
 `;
 
